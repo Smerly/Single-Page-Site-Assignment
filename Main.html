@@ -23,21 +23,19 @@
             font-size: 3em;
             align-items: center;
             display: flex;
-            
-          
+
+
 
 
         }
+
         h2.wbox {
             background-color: rgba(255, 255, 255, 0.44);
             width: 25%;
 
-            
+
         }
-        h2.wbox {
-            background-color: rgba(255, 255, 255, 0.44);
-            width: 25%;
-        }
+
         #nav {
             background-image;
             min-height: 100vh;
@@ -52,6 +50,8 @@
             padding: 0;
             background-color: #94eec4;
             display: flex;
+            background-image: "background.jpeg";
+
 
         }
 
@@ -73,99 +73,98 @@
             flex-direction: column;
             margin: 20px;
             align-items: center;
-
-
-
-
-
         }
-
         div.container {
             padding: 2px 16px;
-
-
-
         }
-
         .cards {
             display: flex;
             flex-direction: row;
-            background-color:rgb(255, 255, 255);
-            justify-content:space-evenly;
+            background-color: rgb(255, 255, 255);
+            justify-content: space-evenly;
         }
         .card {
             background-color: white;
-            justify-content:space-evenly;
+            justify-content: space-evenly;
         }
-
         .card:hover {
             box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
-
-
         }
-
         .container {
             padding: 2px 16px;
-
-
         }
-
         div.card img {
             border-radius: 5px 5px 0 0;
             border: 2px solid;
             border-color: black;
-           
-
         }
-
         .center {
             display: flex;
             margin-left: auto;
             margin-right: auto;
             width: 100%;
         }
-
         div#top {
             background-color: gray;
             display: flex;
             padding: 400px;
-
+            overflow: hidden;
         }
-
+         {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+        }
         .background-space {
             background-color: #94eec4;
             display: flex;
             margin: 50px;
-
+        }
+        #topnav {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+          background-color: #333;
+        }
+        #topnav li, a {
+           font-family: "Helvetica Neue";
+           font-weight: 500;
+           font-size: 25px;
+           color: white;
+           text-decoration: none;
+        }
+        #topnav header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 10%;
+        }
+        .navigation {
+            list-style: none;
+        }
+        .navigation li {
+            display: inline-blocks;
+            padding: 0px 20px;
 
         }
-
-        ul.navigation {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-
+        .navigation li a {
+            transition: all 0.3s ease 0s;
+        }
+        .navigation li a:hover {
+            color: rgb(0, 0, 0);
         }
 
-        li.navigationli {
-            display: block;
-            width: 60px;
 
-        }
 
         .text {
             font-family: "Helvetica Neue";
             color: gray;
         }
-
         p {
             font-weight: 120;
-           
-
         }
-
         div.box1 {
-
             background-color: rgba(255, 255, 255, 0.44);
             padding: 1em;
             width: 75%;
@@ -173,16 +172,32 @@
             max-width: 700px;
             align-items: flex-start;
             justify-content: center;
-            
         }
-
         div.box2 {
+            background-color: rgba(255, 255, 255, 0.44);
+            padding: 1em;
+            width: 75%;
+            height: 80vh;
+            max-width: 700px;
+            align-items: flex-start;
+            justify-content: flex-end;
+        }
 
+
+
+
+        section#My-Journey {
+            justify-content: flex-start;
+            min-height: 100vh;
+            position: relative;
+            left: 60px;
 
         }
-        section#My-Journey {
-            min-height: 100vh;
 
+        section#Starting-Out {
+            justify-content: flex-end;
+            position: relative;
+            left: 900px;
         }
 
         p.cardp {
@@ -190,22 +205,43 @@
             font-weight: 120;
 
         }
+
+        form {
+            background-color: rgba(255, 199, 234, 0.44);
+            margin: 0.5em;
+            padding: 1em;
+            width: 75%;
+            height: 20vh;
+            max-width: 700px;
+            align-items: flex-start;
+            justify-content: flex-end;
+        }
+        a.footer:hover {
+            color: rgb(0, 0, 0);
+
+
+        }
+        
     </style>
 </head>
 
 <body>
     <main>
-        <nav id="nav">
+        <header>
+        <nav>
             <section id="banner">
+                <div id="topnav">
+                    <ul class="navigation">
+                        <li><a href="#My-Journey">My Journey</a></li>
+                        <li><a href="#My-Creations">My Creations</a></li>
+                        <li><a href="#Starting-Out">Starting Out</a></li>
+                    </ul>
+            </div>
+    </nav>
                 <div id="top">
                     <h1>Creation Is The Soul of The Mind</h1>
-                    <ul class="navigation">
-                        <li class="navigationli"><a href="#My-Journey">My Journey</a></li>
-                        <li class="navigationli"><a href="#My-Creations">My Creations</a></li>
-                        <li class="navigationli"><a href="#Starting-Out">Starting Out</a></li>
-                    </ul>
-                </div>
-        </nav>
+                    </div>
+                    
 
         <div class="background-space">
 
@@ -222,16 +258,16 @@
                             <div id="My-Journey">
                                 <div class="text">
                                     <h2 data-aos="fade-right"> My Journey Through the World of Art</h2>
-                                    <p data-aos="fade-right"> 
+                                    <p data-aos="fade-right">
                                         Drawing is one of the skills in the world where you can't
                                         see your path ahead as in,
                                         learning to draw isn't a straight line.
                                         Depending on what you want to learn, it could take a complete different
                                         approach.
                                     </p>
-                                    <p>
+                                    <p data-aos="fade-right">
                                         If your goal is to learn to master drawing and painting by the eye, then
-                                        repetitively doing still life drawing with perspective techniques will benefit
+                                        doing still life drawing with perspective techniques will benefit
                                         you the most. On the other hand, if your goal is to learn to draw things by
                                         imagination, the earlier mentioned practice is not optimal. As for imagination
                                         drawing practice, you should train yourself to rotate and see things in 3d
@@ -240,7 +276,7 @@
                                         similarly to a pillow with certain curves, and the hip is shaped similarly to a
                                         basket.
                                     </p>
-                                    <p>
+                                    <p data-aos="fade-right">
                                         I personally chose to pursue imaginative drawing, mostly concentrated in the
                                         human body in anime style art. A learning strategy that helped me develop in
                                         this category was
@@ -254,13 +290,15 @@
                 </div>
             </div>
 
+            <div class="background-space">
 
+            </div>
 
 
         </section>
         <section id="My-Creations">
             <div class="text">
-            <h2 data-aos="fade-right" class="wbox">My Creations</h2>
+                <h2 data-aos="fade-right" class="wbox">My Creations</h2>
             </div>
             <ul class="cards">
                 <li>
@@ -270,7 +308,8 @@
                         </div>
                         <div class="container">
                             <p data-aos="fade-right" class="cardp">
-                                This is a character that I designed and illustrated for my manga that I am making. This piece will be the cover for the first few chapters of my manga.
+                                This is a character that I designed and illustrated for my manga that I am making. This
+                                piece will be the cover for the first few chapters of my manga.
                             </p>
                         </div>
                     </div>
@@ -291,11 +330,13 @@
                 <li>
                     <div data-aos="fade-right" class="card">
                         <div class="image-fit">
-                            <a href="Manga-1-pg-3.png"><img src="Manga-1-pg-3.png" style="width: 70%" class="center"></a>
+                            <a href="Manga-1-pg-3.png"><img src="Manga-1-pg-3.png" style="width: 70%"
+                                    class="center"></a>
                         </div>
                         <div class="container">
                             <p data-aos="fade-right" class="cardp">
-                                The first page that I completely finished. Although this isn't page one, so far, this one has the most dynamic movement.
+                                The first page that I completely finished. Although this isn't page one, so far, this
+                                one has the most dynamic movement.
                             </p>
                         </div>
                     </div>
@@ -309,38 +350,59 @@
 
         </section>
         <section id="Starting-Out">
-            <div>
-                <h2 class="wbox2">Important Things When Starting Out</h2>
+            <div data-aos="fade-right" style="transform: scaleX(-1);" style="transform: scaleY(-1);" class="box2">
+                <div data-aos="fade-right" class="box2">
+                    <div data-aos="fade-right" class="box2">
+                        <div data-aos="fade-right" class="box2">
 
-                <p> In my opinion, The number one most important thing to have is an experienced artist as a resource. Most of the problems you will encounter will be things that vary from person to person, so having professional guidance is a very useful tool.   </p>
+                            <div style="transform: scaleX(-1);">
+                                <div class="text">
+                                    <h2 class="wbox2">Important Things When Starting Out</h2>
+
+                                    <p> In my opinion, The number one most important thing to have is an experienced
+                                        artist
+                                        as a
+                                        resource. Most of the problems you will encounter will be things that vary from
+                                        person
+                                        to person, so having professional guidance is a very useful tool.</p>
+                                    <p>
+                                        At first, don't try to perfect your drawings. Rather, try to pump out as many
+                                        drawings as you can, but of course at the same time, try to make it as accurate
+                                        as
+                                        you can. The reason why you shouldn't worry too much about the quality is
+                                        because at
+                                        this point of your learning, you are only trying to develop mileage. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
-
-
-
-
         </section>
-        <footer id="ontact">
-            <form>
+        <footer id="contact">
+            <form data-aos="fade-right">
+                <h2> You can contact me here </h2>
                 <label>
                     Name
                     <input type="text">
+
                 </label>
 
                 <label>
                     Email
                     <input type="email">
+
                 </label>
 
                 <label>
                     Message
-                    <textarea></textarea>
+                    <input type="text">
+
                 </label>
 
                 <button type="submit">Send</button>
             </form>
-            <p> Transition Plugin Source:</p>
+            <p> Transition Plugin Source by <a class="footer" href="https://github.com/michalsnik/aos">Michal Snik</a></p>
         </footer>
     </main>
 
