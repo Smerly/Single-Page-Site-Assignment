@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <title>
         Creation is The Soul of The Mind
     </title>
@@ -11,11 +12,12 @@
     <link rel="stylesheet" type="text-css" href="style.css">
     <style>
         h1 {
+            text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+            color: black;
             font-family: "Helvetica Neue";
             font-size: 4em;
             align-items: center;
             display: flex;
-
         }
 
         h2 {
@@ -23,10 +25,6 @@
             font-size: 3em;
             align-items: center;
             display: flex;
-
-
-
-
         }
 
         h2.wbox {
@@ -37,7 +35,6 @@
         }
 
         #nav {
-            background-image;
             min-height: 100vh;
         }
 
@@ -50,16 +47,11 @@
             padding: 0;
             background-color: #94eec4;
             display: flex;
-            background-image: "background.jpeg";
-
-
         }
 
         li {
 
             list-style-type: none;
-
-
         }
 
         div.card {
@@ -105,7 +97,9 @@
             width: 100%;
         }
         div#top {
-            background-color: rgb(194, 219, 125);
+            background-image: url("background.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
             display: flex;
             padding: 400px;
             overflow: hidden;
@@ -221,6 +215,14 @@
 
 
         }
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        .sticky + .content {
+        padding-top: 60px;
+        }
         
     </style>
 </head>
@@ -232,14 +234,14 @@
             <section id="banner">
                 <div id="topnav">
                     <ul class="navigation">
-                        <li><a href="#My-Journey">My Journey</a></li>
+                        <li><a href="#My-Journey">Journey</a></li>
                         <li><a href="#My-Creations">My Creations</a></li>
                         <li><a href="#Starting-Out">Starting Out</a></li>
                     </ul>
             </div>
     </nav>
                 <div id="top">
-                    <h1>Creation Is The Soul of The Mind</h1>
+                    <h1 class="title">Creation Is The Soul of The Mind</h1>
                     </div>
                     
 
@@ -257,7 +259,7 @@
                         <div data-aos="fade-right" class="box1">
                             <div id="My-Journey">
                                 <div class="text">
-                                    <h2 data-aos="fade-right"> My Journey Through the World of Art</h2>
+                                    <h2 data-aos="fade-right"> Journey Through the World of Art</h2>
                                     <p data-aos="fade-right">
                                         Drawing is one of the skills in the world where you can't
                                         see your path ahead as in,
@@ -275,13 +277,6 @@
                                         imagination extremely well. For example, the torso of a human is shaped
                                         similarly to a pillow with certain curves, and the hip is shaped similarly to a
                                         basket.
-                                    </p>
-                                    <p data-aos="fade-right">
-                                        I personally chose to pursue imaginative drawing, mostly concentrated in the
-                                        human body in anime style art. A learning strategy that helped me develop in
-                                        this category was
-                                        looking at professional artist's layers and seeing how they structured their
-                                        drawings from basic sketch to finished fully painted characters.
                                     </p>
                                 </div>
                             </div>
@@ -403,6 +398,8 @@
                 <button type="submit">Send</button>
             </form>
             <p> Transition Plugin Source by <a class="footer" href="https://github.com/michalsnik/aos">Michal Snik</a></p>
+            <p>Artwork at the top done by <a class="footer" href="https://www.pixiv.net/en/artworks/80141634">堅貝</a> on Pixiv</p>
+
         </footer>
     </main>
 
